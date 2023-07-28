@@ -10,6 +10,7 @@ project("ImGui_Piano"
 find_package(imgui REQUIRED)
 
 #Generate the static library from the library sources
+message(STATUS "Building imgui_piano Library...")
 add_library(imgui_piano STATIC "src/imgui_piano.cpp")
-
+target_link_libraries(imgui-imgui_piano PRIVATE imgui)
 target_include_directories(imgui_piano PUBLIC "${PROJECT_SOURCE_DIR}/include")
