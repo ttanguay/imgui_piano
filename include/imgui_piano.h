@@ -19,8 +19,8 @@ bool TestPianoBoardFunct(void* UserData, int Msg, int Key, float Vel) {
 
 #pragma once
 
-#include "imgui.h"
-#include "imgui_internal.h"
+#include <imgui.h>
+#include <imgui_internal.h>
 
 namespace ImGuiExt::Piano
 {
